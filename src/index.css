@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', 'Cambria', 'Garamond';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #808994;
+  color: #2f4f4f;
+  min-height: 100vh;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+code {
+  font-family: 'Times New Roman', 'Cambria', 'Garamond';
+}
+
+h1, h3 {
+  font-family: 'Times New Roman', 'Cambria', 'Garamond';
+}
+
+button {
+  border: none;
+  font-family: 'Times New Roman', 'Cambria', 'Garamond';
+  font-size: inherit;
+  font-weight: 500;
+  background-color:#3D3D3D ;
+  color: #3D3D3D;
+  padding: 2em 0;
+  border-radius: 10px;
+  margin-top: 3em;
+  cursor: pointer;
+  transition: transform 200ms,
+              background-color 200ms,
+              color 200ms;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #3D3D3D;
+  color: #3D3D3D;
+}
+
+button:active {
+  transform: translateY(10px);
+}
+
+/*Uygulama Ekranı CSS kodları*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Times New Roman';
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #eee7e7;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #ccc4c491;  
+    background: -webkit-linear-gradient(to left, #3D3D3D, #e4e4e6);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.baslaButonu{
+    position: center;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    overflow: hidden;
+}
+
+.baslaButonu li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(253, 253, 253, 0.932);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.baslaButonu li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.baslaButonu li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.baslaButonu li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.baslaButonu li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.baslaButonu li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.baslaButonu li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.baslaButonu li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.baslaButonu li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.baslaButonu li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.baslaButonu li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+/* Başlangıç ekranı CSS kodları */
+
+.baslangıc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 575px;
+  width: 100%;
+  border-radius: 0px;
+ 
+  font-size: 4,5rem;
+}
+.baslangıcBaslıgı {
+  margin: 0 0 .6em 0;
+  margin-bottom: 0;
+  font-size: 7rem;
+  letter-spacing: -.05em;
+}
+.baslangıcAltBaslıgı {
+  letter-spacing: -.01em;
+  font-weight: 700;
+}
+.baslaButonu {
+  display: table-row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  height: 6em;
+  position: center;
+  color: #fff;
+}
+
+/* biraz özelleştirmek istedim o yüzden bu kodları da ekledim */
+
+.customize-container {
+  text-align: center;
+  border-radius: 15px;
+  background-repeat: repeat;
+  background-position: 105% -5%, bottom left;
+  height: 675px;
+  max-width: 800px;
+  padding: 2em 2em;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.customize-header {
+  font-size:2rem;
+  letter-spacing: .05em;
+  color :#e4e4e6;
+  line-height: 1,5;
+  margin: 0 0 .6em 0;
+}
+.customize-header__difficulty {
+  margin: 0 0 .6em 0;
+  color: #e4e4e6;
+  line-height: 1,5;
+}
+.customize-options {
+  font-size:1,5rem;
+  width: 100%;
+  display: flexbox;
+  flex-wrap: wrap;
+  padding-left: 0;
+  justify-content: center;
+}
+.customize-options__difficulties {
+  font-size:1,5rem;
+  padding-left: .2em;
+}
+.customize-options .option {
+  margin-bottom: 1em;
+  margin-right: .5em;
+  margin-left: .5em;
+}
+.baslaButonu {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,;
+  align-self: center;
+  margin-top: 1em;
+  font-weight: 1000;
+  
+  
+  
+}
+
+/* sınav ekranı CSS kodları */
+
+
+.quizSoruları {
+  border-bottom: 0px solid #3D3D3D;
+  color:  #FFD52E ;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 1100;
+  text-align: center;
+  margin: 0 0 1em 0;
+
+  
+  
+}
+
+.quizSoruları_sorular {
+  margin: 0 0 1em 0;
+
+  font-size: 1,5rem;
+  letter-spacing: .05em;
+  padding-bottom: .5em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #FFD52E;
+  text-align: center;
+  
+}
+.quizSoruSecenekleri {
+  display: block;
+  justify-content: center;
+  list-style: square;
+  padding-left: 2;
+  color: #7D7D7D;
+
+  
+  margin-bottom: 5em;
+  font-size: 0,5rem;
+  font-weight: 900;
+
+}
+.option {
+  font-weight: 800;
+  border: 2px inset	#60615b;
+  padding: 2,5em 3em;
+  min-width: 65px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 15px;
+  margin-right: 1.4em;
+  display: list-item;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  color: #141414;
+  margin: 0 0 .6em 0;
+  transition: background-color 200ms,
+              color 200ms,
+              border 200ms;
+}
+.option:hover {
+  background-color: #ffd52e5e;
+  color: #FFD52E;
+  border: 1px solid #FFD52E;
+}
+.kontrolButonu {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  height: 3em;
+  position: center;
+  color: #e4e4e6;
+}
+.quizBitisIceriği {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  height: 3em;
+  position: relative;
+}
+.skor {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-right: -0,5em;
+  font-weight: 700;
+  letter-spacing: .04em;
+  opacity: 0;
+  animation: scoreDisplay 3000ms forwards;
+  font-size: 1rem;
+  color: #141414;
+}
+.tekrarOynaButonu {
+  color: #e4e4e6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,;
+  font-weight: 800;
+  margin-top: 0;
+  margin-right: 2em;
+  padding: .8em 2.5em;
+  position: absolute;
+  right: 50%;
+  animation: playAgainSlide 600ms forwards;
+}
+@keyframes scoreDisplay {
+  to {opacity: 1;}
+}
+@keyframes playAgainSlide {
+  to {right: 0%;}
+}
+@keyframes wiggle {
+  20% {transform: translateX(-3px);}
+  40% {transform: translateX(3px);}
+  60% {transform: translateX(-3px);}
+  80% {transform: translateX(3px);}
+  100% {transform: translateX(-3px);}
+}
+
+/* başlangıçtan sınav sayfasına geçerken yükleme animasyonu https://loading.io/css/ sitesinden aldım kodları*/
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #2f4f4f transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);}
+}
+
+
